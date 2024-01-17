@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Rozha One', serif;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  h1{
+    text-align: center;
+  }
+ 
+.column {
+    float: left;
+    width: 30%;
+    margin-top: 15px;
+   margin-left: 20px;
+  }
+  
+ 
+  .row {margin: 0 -5px;}
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .row{
+      display: block;
+      margin-right: -79%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+        
+    }
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+ 
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .card{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+    height: 10rem;
+    border: 2px solid rgba(0, 0, 0, 0.419);
+    border-radius: 20px;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    color: white;
+    
+  }
+ 
+  .card_body{
+   text-align: center;
+   font-size: 25px;
+  }
+  .card_name span{
+    font-size: 10px;
+  }
+  .card_total{
+    font-weight: 500;
+    font-size:  30px;
+    
+    
+  } 
+ .card:hover{
+    background-color: rgba(89, 89, 237, 0.526);
+     font-size: x-large;
+     text-shadow: 5px 5px 10px black;
+ }
+ .COUNTRY{
+  background-color: blueviolet;
+ }
+ .RECOVERED{
+    background-color: rgb(43, 255, 0);
+   }
+   .CONFIRMED{
+    background-color: rgb(255, 0, 0);
+   }
+   .DETH{
+    background-color: rgba(190, 75, 18, 0.862);
+   }
+   .ACTIVE{
+    background-color: rgb(107, 220, 9);
+   }
+   .UPDATE{
+    background-color: rgb(15, 104, 131);
+   }
